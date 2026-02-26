@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sindhu Fan Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff4e8a, #6a00f4);
+      color: white;
+      text-align: center;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      background: white;
+      color: #6a00f4;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ffe6f2;
+      transform: scale(1.05);
+    }
+
+    #message {
+      margin-top: 30px;
+      font-size: 22px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="enterClub()">Click Here</button>
+
+  <div id="message">
+    🎉 You have successfully entered Sindhu Fan Club Premiere 🎉
+  </div>
+
+  <script>
+    function enterClub() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
